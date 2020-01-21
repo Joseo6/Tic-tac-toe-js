@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3 en raya html</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="3enRaya.css">
+        <link href='https://fonts.googleapis.com/css?family=Mansalva&display=swap' rel='stylesheet'>
+    </head>
+    
+    <body onload="iniciar();">
+        <header>
+        3 en raya
+        </header>
+        
+        <nav>
+            <button onclick="iniciar()">Iniciar</button>
+            <select id="dificultad">
+                <option value="facil">Fácil</option>
+                <option value="dificil">Difícil</option>
+            </select>
+            <button onclick="instrucciones()">Instrucciones de juego</button>
+        </nav>
+        <div>
+            <p id="marcador"></p>
+               
+        </div>
+        
+        <table>
+            <tr>
+                <th><div id="0" class="celda" onclick="escribir(this.id)"></div></th>
+                <th><div id="1" class="celda" onclick="escribir(this.id)"></div></th>
+                <th><div id="2" class="celda" onclick="escribir(this.id)"></div></th>
+            </tr>
+
+            <tr>
+                <th><div id="3" class="celda" onclick="escribir(this.id)"></div></th>
+                <th><div id="4" class="celda" onclick="escribir(this.id)"></div></th>
+                <th><div id="5" class="celda" onclick="escribir(this.id)"></div></th>
+            </tr>
+
+            <tr>
+                <th><div id="6" class="celda" onclick="escribir(this.id)"></div></th>
+                <th><div id="7" class="celda" onclick="escribir(this.id)"></div></th>
+                <th><div id="8" class="celda" onclick="escribir(this.id)"></div></th>
+            </tr>
+
+        </table>
+        
+        <p id="parrafoTurnos">Decidiendo turnos...</p>
+        <script type="text/javascript" src="3enRaya.js"></script>
+    </body>
+</html>
